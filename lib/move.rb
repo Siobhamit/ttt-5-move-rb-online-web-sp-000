@@ -11,6 +11,7 @@ def input_to_index(input)
   index = input.to_i - 1
   return index
 end
+<<<<<<< HEAD
 
 
 
@@ -22,4 +23,14 @@ end
 def move(board, index, value = "X")
   update_array_at_with(board, index, value)
   display_board(board)
+=======
+def update_array_at_with(board, index, value)
+  array[index] = value
+end
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+def move(board, index, char = "x")
+  update_array_at_with
+  display_board
+>>>>>>> 31f0ac3fd925091284af3fe5b86d571ea04bf43f
 end
